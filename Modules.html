@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type = 'module'>
+    import {Hero} from '../Modules/Hero.js'
+
+
+    var hero1 = new Hero("IronMan","Tony",7);
+    var hero2 = new Hero("SpiderMan","Peter",6);
+    console.log(hero1.fullName());
+    console.log(hero2.fullName());
+    console.log(hero1.power);
+    console.log(hero2.power);
+    console.log(hero2.getter());
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

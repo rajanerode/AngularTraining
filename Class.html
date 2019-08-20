@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    
+        var Hero = function(title,name){
+            this.title = title;
+            this.firstname = name;
+            var privateVariable = "private";
+            this.fullName = function(){
+                return this.title+" "+this.firstname;
+            }
+        }
+
+        var hero1 = new Hero("IronMan","Tony");
+        var hero2 = new Hero("SpiderMan","Peter");
+
+        console.log(hero1.fullName());
+        console.log(hero2.fullName());
+        console.log(hero2.privateVariable);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

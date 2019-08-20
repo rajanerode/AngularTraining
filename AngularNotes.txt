@@ -1,0 +1,37 @@
+Angular JS :
+
+Extensions needed :
+
+Angular 2 typescript emmet
+beautify
+mithril emmet
+open in browser
+
+Exe 1:
+"DOMContentLoaded" - fisrt event to trigger while loading a window
+
+Exe 2:
+var VS let VS const
+var - block scope not followed. -> allows accessing of variable outside block
+let - block scope follwed. 
+const - block scope followed. -> constant values cant be changed, but a property of constant object allowed to change
+
+Exe 3:
+Default parameters -> set function parameters with default values.
+
+Exe 4 :
+Arguments -> Specify multiple parameters with three dots(...nums)
+Array as parameter - > set array as function call parameter with three dots(...)
+
+Babeljs.io used to convert js fiel to different ecmascript version
+
+Server side Angular :
+
+Create a folder
+C:\MyAngularTraining>cd C:\MyAngularTraining\server
+C:\MyAngularTraining\server>npm install express
+
+TypeScript :
+C:\MyAngularTraining\TypeScript>npm i typescript -g
+C:\MyAngularTraining\TypeScript>tsc -v
+Version 3.5.3

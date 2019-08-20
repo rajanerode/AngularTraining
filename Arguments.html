@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function oldAdder(){
+            let temp = 0;
+            for(let i = 0; i<arguments.length;i++){
+                temp = temp+arguments[i];
+            }
+            return "oldAdder"+temp;
+        }
+
+        console.log(oldAdder(6));
+        console.log(oldAdder(6,7));
+        
+        function adder(...nums){
+            let temp = 0;
+            for(let i = 0; i<nums.length;i++){
+                temp = temp+nums[i];
+            }
+            return "adder"+temp;
+        }
+        console.log(adder(6));
+        console.log(adder(6,7));
+
+        let arr = [5,6,7,8];
+        console.log(adder(arr));
+        console.log(adder(...arr));
+        
+    </script>
+</body>
+</html>

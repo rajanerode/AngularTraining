@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    var hero = {
+        title : "IronMan",
+        power : 6
+    };
+    function checkPower(){
+        if(hero.power >5){
+            var temp = hero.title+"is strong";
+            let temp1 = hero.title+"is let strong";
+            const temp2 = hero.title+"is const strong";
+
+            const temp3 = {
+                nam : "constname"
+            };
+            
+            console.log(temp);
+            console.log(temp2);
+            console.log(temp1);
+            console.log(temp3.nam);
+
+            temp3.nam = "const changed";
+            console.log(temp3.nam);
+
+
+            hero.title = temp;
+        }
+        console.log(temp);
+        console.log(temp2);
+        console.log(temp1);
+    }
+checkPower();
+console.log(hero.title +"outside");
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

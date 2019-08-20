@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+            document.write("I am from javascript");
+        
+           // window.onload = windowLoad;
+            window.addEventListener("load",windowLoad);
+            document.addEventListener("DOMContentLoaded",documentLoad);
+        
+            function windowLoad(){
+                console.log("Window loaded");
+            }
+            function documentLoad(){
+                console.log("Document loaded");
+            }
+            function bodyLoad(){
+                console.log("Body loaded");
+            }
+        </script>
+</head>
+<body onload="bodyLoad()">
+    <h1>First angular site</h1>
+<p>Hello world</p>
+</body>
+</html>
